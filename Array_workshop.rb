@@ -20,7 +20,7 @@ print array.select(&:odd?)
 
 #QUESTION 3#
 
-names = ["Sandy", "Terrence","Susan", "Humphrey", "Simone", "Englebert", "Imogen", "Ron"]
+names = ["Sandy", "Terrence", "Susan", "Humphrey", "Simone", "Englebert", "Imogen", "Ron"]
 s = []
 
 names.each {|name| 
@@ -33,7 +33,7 @@ names.each {|name|
 
 #QUESTION 4#
 
-name = ["Sandy", "Terrence","Susan", "Humphrey", "Simone", "Englebert", "Imogen", "Ron"]
+name = ["Sandy", "Terrence", "Susan", "Humphrey", "Simone", "Englebert", "Imogen", "Ron"]
 
 caps =[]
 
@@ -46,17 +46,15 @@ p caps
 
 #QUESTION 5#
 
-input = gets.chomp
-
 input_array = []
 
 while true do 
 puts "Enter word"
-    word = gets.downcase
+    word = gets.chomp.downcase
+    stop = false
     if word == "stop"
         print input_array
         break
     else input_array.push(word)
-
     end
 end
