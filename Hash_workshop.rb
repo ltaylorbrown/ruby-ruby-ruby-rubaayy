@@ -1,15 +1,15 @@
-# animal = Hash.new 
+animal = Hash.new 
 
-# puts "What type of animal is it?"
-# animal["type"] = gets.chomp.downcase
+puts "What type of animal is it?"
+animal["type"] = gets.chomp.downcase
 
-# puts "Does it have fur?"
-# animal["fur?"] = gets.chomp.downcase
+puts "Does it have fur?"
+animal["fur?"] = gets.chomp.downcase
 
-# puts "Does it fly?"
-# animal["fly?"] = gets.chomp.downcase
+puts "Does it fly?"
+animal["fly?"] = gets.chomp.downcase
 
-# puts animal 
+puts animal 
 
 family = { "Homer" => "dad",
   "Marge" => "mom",
