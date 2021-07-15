@@ -8,4 +8,4 @@ def maskify(cc)
   end
 end 
 
- puts maskify("1")
+ puts maskify"156834765872346598763459872634657"
