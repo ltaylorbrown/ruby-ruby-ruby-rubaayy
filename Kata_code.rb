@@ -33,16 +33,35 @@
 
 # Your code must return true or false depending upon whether the given number is a Narcissistic number in base 10.
 
-  def narcissistic?(value)
-    power = value.to_s.length
-    digit = value.to_s.split('')
-    total = 0
+#   def narcissistic?(value)
+#     power = value.to_s.length
+#     digit = value.to_s.split('')
+#     total = 0
     
-    for i in (0..digit.length)
-      total = total + digit[i].to_i**power
-    end
-    total == value ? true : false
-  end
+#     for i in (0..digit.length)
+#       total = total + digit[i].to_i**power
+#     end
+#     total == value ? true : false
+#   end
 
-p narcissistic?(153)
-p narcissistic?(1633)
+# p narcissistic?(153)
+# p narcissistic?(1633)
+
+def list(names)
+  names = names.map(&:values)
+  if names.empty?
+    return ''
+  elsif 
+    names.length == 1
+    return names.join() 
+  else 
+    return names[0...-1].join(', ') + ' & ' + names[-1].join()
+  end
+end
+# p list([])
+
+# p list([{name: 'Bart'},{name: 'Lisa'},{name: 'Maggie'},{name: 'Homer'},{name: 'Marge'}])
+
+ p list([{name: 'Bart'}])
+
+ 
