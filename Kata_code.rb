@@ -47,21 +47,20 @@
 # p narcissistic?(153)
 # p narcissistic?(1633)
 
-def list(names)
-  names = names.map(&:values)
-  if names.empty?
-    return ''
-  elsif 
-    names.length == 1
-    return names.join() 
-  else 
-    return names[0...-1].join(', ') + ' & ' + names[-1].join()
-  end
-end
-# p list([])
+# def list(names)
+#   names = names.map(&:values)
+#   if names.empty?
+#     return ''
+#   elsif 
+#     names.length == 1
+#     return names.join() 
+#   else 
+#     return names[0...-1].join(', ') + ' & ' + names[-1].join()
+#   end
+# end
+# # p list([])
 
-# p list([{name: 'Bart'},{name: 'Lisa'},{name: 'Maggie'},{name: 'Homer'},{name: 'Marge'}])
+# # p list([{name: 'Bart'},{name: 'Lisa'},{name: 'Maggie'},{name: 'Homer'},{name: 'Marge'}])
 
- p list([{name: 'Bart'}])
+#  p list([{name: 'Bart'}])
 
- 
